@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #558d6b; */
+    background: linear-gradient(180deg, #558D6B 6.7%, #47795F 29.25%, #2A5541 50.26%, #153B2C 64.61%, #052A1D 82.03%, #000000 100%);
+}
+
+/* Tartalom teljes középre helyezéséhez */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    height: 100svh;
+    position: relative;
+}
+
+/*  Logo és ahhoz külső div */
+
+.logo-container {
+    position: absolute;
+    top: 10vh;
+}
+
+/* Login ablak, annak részei */
+
+.popup-window {
+    height: 35vh;
+    width: 20vw;
+    margin: 0;
+    padding: 0;
+}
+
+.popup-window .header {
+    background-color: rgba(173, 188, 159, 0.3);
+    color: white;
+    margin: 0;
+    padding: 15px 0;
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.popup-window .header p {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    font-size: 1.6rem;
+}
+
+.popup-window .body {
+    background-color: rgba(217, 217, 217, 0.1);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 35vh;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+
+.popup-window .body .email, .popup-window .body .password {
+    width: 75%;
+    margin: 0 auto;
+    padding: 3vh 1vw 1vh 1vw;
+    border-bottom: 1px solid white;
+}
+
+
+.popup-window input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 1vw;
+    height: 3vh;
+    font-size: 14pt;
+    color: white;
+}
+
+.popup-window input::placeholder {
+    color: white;
+    font-size: 14pt;
+}
+
+.forgotten-pw {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.forgotten-pw p {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.error-message p {
+    color: rgba(216, 43, 43, 1);
+    margin: 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.popup-window-btn {
+    background-color: rgba(217, 217, 217, 0.1);
+    border: none;
+    outline: none;
+    padding: 1.5vh 1.5vw;
+    /* margin: 2.5vh auto 0 auto; */
+    display: block;
+    font-size: 14pt;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 4vh;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    cursor: pointer;
+    transition: background-color .25s ease-in;
+}
+
+.popup-window-btn:hover {
+    background-color: rgba(217, 217, 217, 0.15);
+}
+
+/* Elfelejtett jelszó ablak részei */
+
+.popup-window .body .instructions {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.instructions p {
+    color: rgba(255, 254, 254, 0.7);
+    margin: 0;
+    padding-top: 4vh;
+}
+
+/* Login utáni dashboard felület */
+
+.dashboard {
+    width: 55%;
+    margin: 0 auto;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    height: 100svh;
+    position: relative;
+
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.dashboard .logo-bar img {
+    margin: 0 auto;
+    display: block;
+    padding-top: 5vh;
+}
+
+.dashboard .searchbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+
+.dashboard .searchbar input {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-image-source: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 1vh 1.5vw;
+    border-radius: 12px;
+    font-size: 12pt;
+    width: 88%;
+}
+
+.searchbar input::placeholder {
+    color: white;
+}
+
+.searchbar button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    padding: 1.5vh;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+}
+
+.menu a {
+    flex-grow: 1;
+    padding: 7px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a:not(.active) {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.menu a:nth-child(1) {
+    text-align: left;
+}
+
+.menu a:nth-child(2) {
+    text-align: center;
+}
+
+.menu a:nth-child(3) {
+    text-align: right;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.menu a.active {
+    border-bottom: 2px solid white;
+}
+
+/* Kártyákat tároló box */
+
+.cards {
+    overflow-y: auto;
+    height: 55vh
+}
+
+/* Custom scrollbar a kártyáknak */
+
+.cards::-webkit-scrollbar, .partner-description::-webkit-scrollbar {
+    width: 10px;
+}
+
+.cards::-webkit-scrollbar-track, .partner-description::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0.1);
+}
+
+.cards::-webkit-scrollbar-thumb, .partner-description::-webkit-scrollbar-thumb {
+    background: rgb(145, 145, 145);
+    border-radius: 5px;
+}
+
+.cards::-webkit-scrollbar-thumb:hover, .partner-description::-webkit-scrollbar-thumb:hover {
+    background: rgb(131, 131, 131);
+}
+
+/* Kártya */
+
+.card {
+    background: rgba(217, 217, 217, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 95%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 5vh;
+    margin: 3vh auto;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card .column {
+    height: 5vh;
+    margin: 0 1vw;
+    position: relative;
+    width: 15%;
+}
+
+.card .column p {
+    margin: 0;
+}
+
+.card .column p:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+}
+
+
+.card .icon {
+    display: flex;
+    align-items: center;
+    margin: 0 5vw;
+    cursor: pointer;
+}
+
+.card .icon img {
+    margin-right: 10px;
+    transition: scale .2s ease-in-out;
+}
+
+.card .icon:hover img {
+    scale: 1.05;
+}
+
+/* Partner adatainak listázása oldal */
+
+.partner-name {
+    padding: 0 10px;
+}
+
+.partner-name h3 {
+    color: white;
+    font-size: 18pt;
+}
+
+.partner-description {
+    background-color: rgba(217, 217, 217, 0.1);
+    height: 15vh;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    /* overflow-y: auto; */
+}
+
+.partner-description p {}
+
+.partner-informations .searchbar {
+    margin-bottom: 5vh;
+}
+
+.partner-data {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "id status"
+        "birthday status"
+        "ids address"
+    ;
+    grid-gap: 5px 20px;
+}
+
+.partner-data .partner-id {
+    background-color: rgba(217, 217, 217, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    /* width: 90%; */
+    margin: 1vh 0;
+    display: flex;
+}
+
+.partner-id p {
+    margin: 0;
+    padding: 0;
+}
+
+.partner-id p:nth-child(2) {
+    margin-left: auto;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.partner-birthday, .partner-ids, .partner-status, .partner-address {
+    background-color: rgba(217, 217, 217, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    /* width: 90%; */
+    margin: 1vh 0;
+}
+
+.data {
+    display: flex;
+}
+
+.data p {
+    margin: .5vh 0;
+    padding: 0;
+}
+
+.data p:nth-child(2) {
+    margin-left: auto;
+}
+
+/* Grid felosztáshoz elnevezések */
+
+.partner-id {
+    grid-area: id;
+}
+
+.partner-birthday {
+    grid-area: birthday;
+}
+
+.partner-ids {
+    grid-area: ids;
+}
+
+.partner-status {
+    grid-area: status;
+}
+
+.partner-address {
+    grid-area: address;
+}
+
+/* Partner oldal dropdownokkal */
+
+.editable {}
+
+.edit-partner-data {
+    border: none;
+    outline: none;
+    background-color: rgba(217, 217, 217, 0.1);
+    margin: 5px 0 5px auto;
+    width: 100%;
+    padding: 3px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    background-image: url("./files/arrow.svg");
+    background-repeat: no-repeat;
+    /* background-position-x: 100%;
+    background-position-y: 5px; */
+    background-position: calc(100% - 0.6rem) center !important;
+    padding-right: 2rem !important;
+    cursor: pointer;
+    color: rgba(255, 254, 254, .5);
+    background-color: rgba(217, 217, 217, 0.1);
+
+}
+
+.editor-container{
+    width: 40%;
+    margin-left: auto;
+}
+
