@@ -84,9 +84,11 @@
 
     <!-- PARTNER KIVÁLASZTÁS OLDAL -->
 
-    <!-- <div class="dashboard">
+    <div class="dashboard">
       <div class="logo-bar">
         <img src="./files/logo.svg" class="logo" />
+        <img src="./files/menu.svg" class="logo">
+        <img src="./files/message.svg" class="logo-message">
       </div>
       <div class="searchbar">
         <input type="text" placeholder="Keresés..." />
@@ -175,10 +177,10 @@
                 <p>Szomszéd Márk.</p>
             </div>
         </div>
-
-
+        
       </div>
-    </div> -->
+      <button class="add-partner-mobile">Partner felvitel</button>
+    </div>
 
     <!-- MEGLÉVŐ PARTNER ADATAI -->
 
@@ -316,7 +318,7 @@
 
     <!-- FELHASZNÁLÓ OLDAL DROPDOWNOKKAL -->
 
-    <div class="dashboard partner-informations editable">
+    <!-- <div class="dashboard partner-informations editable">
       <div class="logo-bar">
         <img src="./files/logo.svg" class="logo" />
       </div>
@@ -332,18 +334,16 @@
         </div>
       </div>
       <div class="partner-name">
-        <h3>Toth Tamás</h3>
+        <input type="text" class="set-partner-name" placeholder="Partner teljes neve" />
       </div>
       <div class="partner-description">
         <p>
-          feher ház. nagy feje van . 2 kutyaja van. Monika a felesege. van harom
-          gyereke .
         </p>
       </div>
       <div class="partner-data">
         <div class="partner-id">
           <p class="title">ügyfél azonosító:</p>
-          <p>35414</p>
+          <p></p>
         </div>
         <div class="partner-birthday">
           <div class="data">
@@ -378,7 +378,6 @@
           </div>
           <div class="data">
             <p class="title">Nem:</p>
-            <!-- <input type="text" class="edit-partner-data"> -->
             <div class="editor-container">
               <select property="gender" class="edit-partner-data">
                 <option disabled hidden selected value="">
@@ -393,19 +392,50 @@
         <div class="partner-ids">
           <div class="data">
             <p class="title">Előfizetés:</p>
-            <p>Aktív</p>
+            <div class="editor-container">
+              <select property="gender" class="edit-partner-data">
+                <option disabled hidden selected value="">
+                  Kérem válasszon!
+                 </option>
+                <option value="1">Aktív</option>
+                <option value="2">Felfüggesztett</option>
+                <option value="3">Inaktív</option>
+              </select>
+            </div>
+
           </div>
           <div class="data">
             <p class="title">Valami:</p>
-            <p>Nincs</p>
+            <div class="editor-container">
+              <select property="gender" class="edit-partner-data">
+                <option disabled hidden selected value="">
+                  Kérem válasszon!
+                 </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
           </div>
           <div class="data">
             <p class="title">Adóazonosító jel:</p>
-            <p></p>
+            <div class="editor-container">
+              <input type="text" class="edit-partner-data" />
+            </div>
           </div>
           <div class="data">
             <p class="title">Személyi ig. szám:</p>
-            <p>tt572827</p>
+            <div class="editor-container">
+              <select property="gender" class="edit-partner-data">
+                <option disabled hidden selected value="">
+                  Kérem válasszon!
+                 </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
           </div>
         </div>
         <div class="partner-status">
@@ -464,7 +494,7 @@
             <p></p>
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
+    </div> -->
   </body>
 </html>
