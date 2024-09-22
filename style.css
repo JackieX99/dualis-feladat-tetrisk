@@ -8,8 +8,10 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: #558d6b; */
+    background-color: #558d6b;
     background: linear-gradient(180deg, #558D6B 6.7%, #47795F 29.25%, #2A5541 50.26%, #153B2C 64.61%, #052A1D 82.03%, #000000 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Tartalom teljes középre helyezéséhez */
@@ -21,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     flex-direction: column;
-    height: 100svh;
+    min-height: 100svh;
     position: relative;
 }
 
@@ -100,6 +102,7 @@ body {
 .forgotten-pw {
     width: 80%;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .forgotten-pw p {
@@ -119,7 +122,6 @@ body {
     border: none;
     outline: none;
     padding: 1.5vh 1.5vw;
-    /* margin: 2.5vh auto 0 auto; */
     display: block;
     font-size: 14pt;
     color: white;
@@ -163,7 +165,7 @@ body {
     margin: 0;
     padding: 0;
     flex-direction: column;
-    height: 100svh;
+    /* height: 100svh; */
     position: relative;
 
     left: 0;
@@ -354,8 +356,6 @@ body {
     /* overflow-y: auto; */
 }
 
-.partner-description p {}
-
 .partner-informations .searchbar {
     margin-bottom: 5vh;
 }
@@ -376,7 +376,6 @@ body {
     border-radius: 10px;
     padding: 10px 15px;
     color: white;
-    /* width: 90%; */
     margin: 1vh 0;
     display: flex;
 }
@@ -399,7 +398,6 @@ body {
     border-radius: 10px;
     padding: 10px 15px;
     color: white;
-    /* width: 90%; */
     margin: 1vh 0;
 }
 
@@ -436,6 +434,10 @@ body {
 
 .partner-address {
     grid-area: address;
+}
+
+.title-container {
+    grid-area: title;
 }
 
 /* Partner oldal dropdownokkal */
@@ -476,7 +478,7 @@ option {
     margin-left: auto;
 }
 
-.set-partner-name{
+.set-partner-name {
     border: none;
     outline: none;
     background-color: rgba(217, 217, 217, 0.1);
@@ -494,11 +496,11 @@ option {
     font-size: 14pt;
 }
 
-.editable .partner-name{
+.editable .partner-name {
     padding: 0;
 }
 
-.add-partner-mobile{
+.add-partner-mobile {
     border-radius: 10px;
     background: rgba(217, 217, 217, 0.1);
     color: rgba(255, 254, 254, 1);
@@ -513,76 +515,155 @@ option {
     display: none;
 }
 
+.shorter-btn {
+    padding: 1.5vh 4vw;
+    width: auto;
+}
+
+.delete {
+    background-color: #D74242;
+    margin: 1vh auto 3vh auto;
+    padding: 1vh 5vw;
+    width: auto;
+}
+
+.bottom{
+    margin-bottom: 5vh;
+}
+
+.title-container {
+    display: none;
+    visibility: hidden;
+}
+
+/* Mobil ikonok */
+
+.dashboard .logo:nth-child(2) {
+    display: none;
+    visibility: hidden;
+}
+
+/* message ikon */
+.dashboard .logo-message {
+    display: none;
+    visibility: hidden;
+}
+
 
 
 /* Responsive rész */
 
-@media (max-width: 575.98px) { 
+/* @media (max-width: 575.98px) { */
+/* @media (max-width: 767.98px) { */
+@media (max-width: 991.98px) {
+
     /* Popup ablakok */
-    .popup-window{
+    .popup-window {
         width: 80%;
     }
-    .popup-window-btn{
+
+    .popup-window-btn {
         width: 70%;
+        text-transform: uppercase;
     }
+
     /* Dashboard */
-    .dashboard{
+    .dashboard {
         width: 85%;
     }
-    .logo-bar{
+
+    .logo-bar {
         display: flex;
         flex-direction: row;
     }
-    .searchbar{
+
+    .searchbar {
         margin-bottom: 3vh !important;
         margin-top: 3vh;
     }
-    .searchbar input{
+
+    .searchbar input {
         width: 70% !important;
         padding: 1vh 5vw !important;
     }
-    .searchbar button{
+
+    .searchbar button {
         width: 12%;
     }
+
     /* sk logo */
-    .logo:nth-child(1){
+    .dashboard .logo:nth-child(1) {
         visibility: hidden;
         display: none;
         position: absolute;
     }
+
     /* menü ikon */
-    .logo:nth-child(2){
+    .dashboard .logo:nth-child(2) {
         margin: 0 auto 0 2vw !important;
         width: 30px;
         padding-top: 3vh !important;
+        display: unset;
+        visibility: unset;
     }
+
     /* message ikon */
-    .logo-message{
+    .dashboard .logo-message {
         margin: 0 2vw 0 auto !important;
         width: 30px;
         padding-top: 3vh !important;
+        display: unset;
+        visibility: unset;
     }
-    .column{
+
+    .column {
         width: 45% !important;
     }
-    .column:nth-child(2){
+
+    .column:nth-child(2) {
         visibility: hidden;
         display: none;
         width: 0% !important;
     }
-    .add-partner-mobile{
+
+    .add-partner-mobile {
         display: block;
     }
+
+    /* Partner adatai oldal */
+    .partner-data {
+        grid-template-areas:
+            "title"
+            "id"
+            "birthday"
+            "address"
+            "status"
+            "ids";
+    }
+
+    .partner-description {
+        margin-bottom: 7vh;
+    }
+
+    .partner-id, .partner-birthday, .partner-ids, .partner-status, .partner-address {
+        margin: .5vh 0 !important;
+    }
+
+    .title-container {
+        display: block;
+        visibility: unset;
+    }
+
+    .title-container p {
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    .editable .partner-ids, .editable .partner-status, .editable .partner-address {
+        display: none;
+        visibility: hidden;
+    }
+
 }
 
-@media (max-width: 767.98px) { 
-
-}
-
-@media (max-width: 991.98px) { 
-
-}
-
-@media (max-width: 1199.98px) { 
-
-}
+/* @media (max-width: 1199.98px) {} */

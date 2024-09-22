@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <div class="wrapper">
-        <div class="logo-container">
-            <img src="./files/logo.svg" class="logo">
-        </div> -->
+    <div class="wrapper">
+      <div class="logo-container">
+        <img src="./files/logo.svg" class="logo" />
+      </div>
 
-    <!-- LOGIN ABLAK -->
+      <!-- LOGIN ABLAK -->
 
-    <!-- <div class="popup-window">
+      <div class="popup-window">
             <div class="header">
                 <p>bejelentkezés</p>
             </div>
@@ -36,11 +36,11 @@
                 </div>
                 <button class="popup-window-btn">Bejelentkezés</button>
             </div>
-        </div> -->
+        </div>
 
-    <!-- ELFELEJTETT JELSZÓ ABLAK -->
+      <!-- ELFELEJTETT JELSZÓ ABLAK -->
 
-    <!-- <div class="popup-window">
+      <!-- <div class="popup-window">
             <div class="header">
                 <p>Elfelejtett jelszó</p>
             </div>
@@ -58,33 +58,34 @@
             </div>
         </div> -->
 
-    <!-- ÚJ JELSZÓ BEÍRÁSA ABLAK -->
+      <!-- ÚJ JELSZÓ BEÍRÁSA ABLAK -->
 
-    <!-- <div class="popup-window">
-            <div class="header">
-                <p>Új jelszó</p>
-            </div>
-            <div class="body">
-                <div class="instructions">
-                    <p>Kérlek add meg az új jelszót és nyomd meg a mentés gombot.</p>
-                </div>
-                <div class="password">
-                    <img src="./files/keylock.svg" class="icon">
-                    <input type="password" placeholder="Jelszó">
-                </div>
-                <div class="password">
-                    <img src="./files/keylock.svg" class="icon">
-                    <input type="password" placeholder="Jelszó ismétlése">
-                </div>
-                <button class="popup-window-btn">MENTÉS</button>
-            </div>
-        </div> -->
+      <!-- <div class="popup-window">
+        <div class="header">
+          <p>Új jelszó</p>
+        </div>
+        <div class="body">
+          <div class="instructions">
+            <p>Kérlek add meg az új jelszót és nyomd meg a mentés gombot.</p>
+          </div>
+          <div class="password">
+            <img src="./files/keylock.svg" class="icon" />
+            <input type="password" placeholder="Jelszó" />
+          </div>
+          <div class="password">
+            <img src="./files/keylock.svg" class="icon" />
+            <input type="password" placeholder="Jelszó ismétlése" />
+          </div>
+          <button class="popup-window-btn">MENTÉS</button>
+        </div>
+      </div> -->
 
-    <!-- </div> -->
+
+    </div>
 
     <!-- PARTNER KIVÁLASZTÁS OLDAL -->
 
-    <div class="dashboard">
+    <!-- <div class="dashboard">
       <div class="logo-bar">
         <img src="./files/logo.svg" class="logo" />
         <img src="./files/menu.svg" class="logo">
@@ -180,13 +181,15 @@
         
       </div>
       <button class="add-partner-mobile">Partner felvitel</button>
-    </div>
+    </div> -->
 
     <!-- MEGLÉVŐ PARTNER ADATAI -->
 
     <!-- <div class="dashboard partner-informations">
       <div class="logo-bar">
         <img src="./files/logo.svg" class="logo" />
+        <img src="./files/menu.svg" class="logo" />
+        <img src="./files/message.svg" class="logo-message" />
       </div>
       <div class="searchbar">
         <input type="text" placeholder="Keresés..." />
@@ -310,17 +313,22 @@
           </div>
           <div class="data">
             <p class="title">Bankszámlaszám:</p>
-            <p>11111 111122 22223 3333 4444 </p>
+            <p>11111 111122 22223 3333 4444</p>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <button class="add-partner-mobile shorter-btn">Összevonás</button>
+    <button class="add-partner-mobile delete">Partner törlése</button> -->
 
     <!-- FELHASZNÁLÓ OLDAL DROPDOWNOKKAL -->
 
     <!-- <div class="dashboard partner-informations editable">
       <div class="logo-bar">
         <img src="./files/logo.svg" class="logo" />
+        <img src="./files/menu.svg" class="logo" />
+        <img src="./files/message.svg" class="logo-message" />
       </div>
       <div class="searchbar">
         <input type="text" placeholder="Keresés..." />
@@ -334,13 +342,19 @@
         </div>
       </div>
       <div class="partner-name">
-        <input type="text" class="set-partner-name" placeholder="Partner teljes neve" />
+        <input
+          type="text"
+          class="set-partner-name"
+          placeholder="Partner teljes neve"
+        />
       </div>
       <div class="partner-description">
-        <p>
-        </p>
+        <p></p>
       </div>
       <div class="partner-data">
+        <div class="title-container">
+          <p>Adatok hozzáadása</p>
+        </div>
         <div class="partner-id">
           <p class="title">ügyfél azonosító:</p>
           <p></p>
@@ -382,7 +396,7 @@
               <select property="gender" class="edit-partner-data">
                 <option disabled hidden selected value="">
                   Kérem válasszon!
-                 </option>
+                </option>
                 <option value="1">Férfi</option>
                 <option value="2">Nő</option>
               </select>
@@ -396,13 +410,12 @@
               <select property="gender" class="edit-partner-data">
                 <option disabled hidden selected value="">
                   Kérem válasszon!
-                 </option>
+                </option>
                 <option value="1">Aktív</option>
                 <option value="2">Felfüggesztett</option>
                 <option value="3">Inaktív</option>
               </select>
             </div>
-
           </div>
           <div class="data">
             <p class="title">Valami:</p>
@@ -410,7 +423,7 @@
               <select property="gender" class="edit-partner-data">
                 <option disabled hidden selected value="">
                   Kérem válasszon!
-                 </option>
+                </option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -429,13 +442,12 @@
               <select property="gender" class="edit-partner-data">
                 <option disabled hidden selected value="">
                   Kérem válasszon!
-                 </option>
+                </option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
             </div>
-
           </div>
         </div>
         <div class="partner-status">
@@ -494,7 +506,11 @@
             <p></p>
           </div>
         </div>
-      </div> 
-    </div> -->
+      </div>
+    </div>
+    <button class="add-partner-mobile bottom">Hozzáadás</button> -->
+
+
+
   </body>
 </html>
