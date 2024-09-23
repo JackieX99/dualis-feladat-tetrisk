@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetrisk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="dashboard partner-informations">
+      <div class="logo-bar">
+        <img src="./files/logo.svg" class="logo" />
+        <img src="./files/menu.svg" class="logo" />
+        <img src="./files/message.svg" class="logo-message" />
+      </div>
+      <div class="searchbar">
+        <input type="text" placeholder="Keresés..." />
+        <button><img src="./files/search.svg" /></button>
+      </div>
+      <div class="navbar">
+        <div class="menu">
+          <a href="#" class="active">Partnerek</a>
+          <a href="#">Feladatok</a>
+          <a href="#">Szerződések</a>
+        </div>
+      </div>
+      <div class="partner-name">
+        <h3>Toth Tamás</h3>
+      </div>
+      <div class="partner-description">
+        <p>
+          feher ház. nagy feje van . 2 kutyaja van. Monika a felesege. van harom
+          gyereke .
+        </p>
+      </div>
+      <div class="partner-data">
+        <div class="partner-id">
+          <p class="title">ügyfél azonosító:</p>
+          <p>35414</p>
+        </div>
+        <div class="partner-birthday">
+          <div class="data">
+            <p class="title">Születési név:</p>
+            <p>Toth Tamás</p>
+          </div>
+          <div class="data">
+            <p class="title">Teljes név:</p>
+            <p>Toth Tamás</p>
+          </div>
+          <div class="data">
+            <p class="title">Születési dátum:</p>
+            <p>1999.10.14</p>
+          </div>
+          <div class="data">
+            <p class="title">Születési hely:</p>
+            <p>Budapest</p>
+          </div>
+          <div class="data">
+            <p class="title">Anyja neve:</p>
+            <p>Kiss Anna</p>
+          </div>
+          <div class="data">
+            <p class="title">Nem:</p>
+            <p>Férfi</p>
+          </div>
+        </div>
+        <div class="partner-ids">
+          <div class="data">
+            <p class="title">Előfizetés:</p>
+            <p>Aktív</p>
+          </div>
+          <div class="data">
+            <p class="title">Valami:</p>
+            <p>Nincs</p>
+          </div>
+          <div class="data">
+            <p class="title">Adóazonosító jel:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Személyi ig. szám:</p>
+            <p>tt572827</p>
+          </div>
+        </div>
+        <div class="partner-status">
+          <div class="data">
+            <p class="title">Jogállás:</p>
+            <p>Magánszemély</p>
+          </div>
+          <div class="data">
+            <p class="title">Állampolgárság:</p>
+            <p>Magyar</p>
+          </div>
+          <div class="data">
+            <p class="title">Legfiatalabb gyermek születése:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Hasonló partner összevonás elutasítva:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Elutasítótt hasonló partner:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Elutasító:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Elutasítás dátuma:</p>
+            <p>2024.10.22</p>
+          </div>
+          <div class="data">
+            <p class="title">Külső azonosító:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Bekerülés módja:</p>
+            <p>Kézi rögzítés</p>
+          </div>
+        </div>
+        <div class="partner-address">
+          <div class="data">
+            <p class="title">Állandó lakcím:</p>
+            <p>ferechegyi út 11c</p>
+          </div>
+          <div class="data">
+            <p class="title">Telefonszám:</p>
+            <p>06 20 778 7342</p>
+          </div>
+          <div class="data">
+            <p class="title">Email:</p>
+            <p>toth.tamas@gmail.com</p>
+          </div>
+          <div class="data">
+            <p class="title">Bankszámlaszám:</p>
+            <p>11111 111122 22223 3333 4444</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="add-partner-mobile shorter-btn">Összevonás</button>
+    <button class="add-partner-mobile delete">Partner törlése</button> -->
+
+    <!-- FELHASZNÁLÓ OLDAL DROPDOWNOKKAL -->
+
+    <!-- <div class="dashboard partner-informations editable">
+      <div class="logo-bar">
+        <img src="./files/logo.svg" class="logo" />
+        <img src="./files/menu.svg" class="logo" />
+        <img src="./files/message.svg" class="logo-message" />
+      </div>
+      <div class="searchbar">
+        <input type="text" placeholder="Keresés..." />
+        <button><img src="./files/search.svg" /></button>
+      </div>
+      <div class="navbar">
+        <div class="menu">
+          <a href="#" class="active">Partnerek</a>
+          <a href="#">Feladatok</a>
+          <a href="#">Szerződések</a>
+        </div>
+      </div>
+      <div class="partner-name">
+        <input
+          type="text"
+          class="set-partner-name"
+          placeholder="Partner teljes neve"
+        />
+      </div>
+      <div class="partner-description">
+        <p></p>
+      </div>
+      <div class="partner-data">
+        <div class="title-container">
+          <p>Adatok hozzáadása</p>
+        </div>
+        <div class="partner-id">
+          <p class="title">ügyfél azonosító:</p>
+          <p></p>
+        </div>
+        <div class="partner-birthday">
+          <div class="data">
+            <p class="title">Születési név:</p>
+            <div class="editor-container">
+              <input type="text" class="edit-partner-data" />
+            </div>
+          </div>
+          <div class="data">
+            <p class="title">Teljes név:</p>
+            <div class="editor-container">
+              <input type="text" class="edit-partner-data" />
+            </div>
+          </div>
+          <div class="data">
+            <p class="title">Születési dátum:</p>
+            <div class="editor-container">
+              <input type="text" class="edit-partner-data" />
+            </div>
+          </div>
+          <div class="data">
+            <p class="title">Születési hely:</p>
+            <div class="editor-container">
+              <input type="text" class="edit-partner-data" />
+            </div>
+          </div>
+          <div class="data">
+            <p class="title">Anyja neve:</p>
+            <div class="editor-container">
+              <input type="text" class="edit-partner-data" />
+            </div>
+          </div>
+          <div class="data">
+            <p class="title">Nem:</p>
+            <div class="editor-container">
+              <select property="gender" class="edit-partner-data">
+                <option disabled hidden selected value="">
+                  Kérem válasszon!
+                </option>
+                <option value="1">Férfi</option>
+                <option value="2">Nő</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="partner-ids">
+          <div class="data">
+            <p class="title">Előfizetés:</p>
+            <div class="editor-container">
+              <select property="gender" class="edit-partner-data">
+                <option disabled hidden selected value="">
+                  Kérem válasszon!
+                </option>
+                <option value="1">Aktív</option>
+                <option value="2">Felfüggesztett</option>
+                <option value="3">Inaktív</option>
+              </select>
+            </div>
+          </div>
+          <div class="data">
+            <p class="title">Valami:</p>
+            <div class="editor-container">
+              <select property="gender" class="edit-partner-data">
+                <option disabled hidden selected value="">
+                  Kérem válasszon!
+                </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="data">
+            <p class="title">Adóazonosító jel:</p>
+            <div class="editor-container">
+              <input type="text" class="edit-partner-data" />
+            </div>
+          </div>
+          <div class="data">
+            <p class="title">Személyi ig. szám:</p>
+            <div class="editor-container">
+              <select property="gender" class="edit-partner-data">
+                <option disabled hidden selected value="">
+                  Kérem válasszon!
+                </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="partner-status">
+          <div class="data">
+            <p class="title">Jogállás:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Állampolgárság:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Legfiatalabb gyermek születése:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Hasonló partner összevonás elutasítva:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Elutasítótt hasonló partner:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Elutasító:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Elutasítás dátuma:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Külső azonosító:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Bekerülés módja:</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="partner-address">
+          <div class="data">
+            <p class="title">Állandó lakcím:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Telefonszám:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Email:</p>
+            <p></p>
+          </div>
+          <div class="data">
+            <p class="title">Bankszámlaszám:</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="add-partner-mobile bottom">Hozzáadás</button>
+
+
+
+  </body>
+</html>
