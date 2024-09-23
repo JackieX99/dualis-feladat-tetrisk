@@ -354,6 +354,7 @@ body {
     border-radius: 10px;
     padding: 10px 15px;
     color: white;
+    margin-bottom: 5vh;
     /* overflow-y: auto; */
 }
 
@@ -362,27 +363,40 @@ body {
 }
 
 .partner-data {
-    display: grid;
-    grid-template-rows: auto;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
         "id status"
         "birthday status"
         "ids address"
     ;
-    grid-gap: 5px 20px;
+    grid-gap: 5px 20px; */
+
+    display: flex;
+    gap: 5px 30px;
+
+    flex-direction: column;
+}
+
+.column{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .partner-data .partner-id {
     background-color: rgba(217, 217, 217, 0.1);
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 5px 10px;
     color: white;
     margin: 1vh 0;
     display: flex;
 }
 
 .partner-id p {
-    margin: 0;
+    margin: auto 0;
     padding: 0;
 }
 
@@ -400,6 +414,11 @@ body {
     padding: 10px 15px;
     color: white;
     margin: 1vh 0;
+    height: max-content;
+}
+
+.partner-address{
+    margin-top: auto;
 }
 
 .data {
@@ -565,10 +584,38 @@ option {
     .searchbar button {
         width: 55px !important;
     }
+
+    .partner-data{
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .partner-id{
+        order: 0;
+    }
+    .partner-birthday{
+        order: 1;
+    }
+    .partner-ids{
+        order: 5;
+    }
+    .partner-address{
+        order: 2;
+    }
+    .partner-status{
+        order: 4;
+    }
+    
 }
 @media (min-width: 767.98px) {
     .popup-window {
         width: 50% !important;
+    }
+    .partner-data{
+        flex-direction: row;
+    }
+    .partner-id, .partner-birthday, .partner-ids, .partner-address, .partner-status{
+        order: unset;
     }
 }
 @media (min-width: 940.98px) {
@@ -641,11 +688,11 @@ option {
         visibility: unset;
     }
 
-    .column {
+    .partner-list .column {
         width: 45% !important;
     }
 
-    .column:nth-child(2) {
+    .partner-list .column:nth-child(2) {
         visibility: hidden;
         display: none;
         width: 0% !important;
@@ -710,6 +757,7 @@ option {
     .searchbar button {
         width: 55px !important;
     }
+    
 
 }
 @media (min-width: 1630px) {
