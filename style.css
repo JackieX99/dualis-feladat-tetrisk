@@ -12,6 +12,7 @@ body {
     background: linear-gradient(180deg, #558D6B 6.7%, #47795F 29.25%, #2A5541 50.26%, #153B2C 64.61%, #052A1D 82.03%, #000000 100%);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100svh;
 }
 
 /* Tartalom teljes középre helyezéséhez */
@@ -195,7 +196,7 @@ body {
     padding: 1vh 1.5vw;
     border-radius: 12px;
     font-size: 12pt;
-    width: 88%;
+    /* width: 88%; */
 }
 
 .searchbar input::placeholder {
@@ -553,9 +554,33 @@ option {
 
 /* Responsive rész */
 
-/* @media (max-width: 575.98px) { */
-/* @media (max-width: 767.98px) { */
-@media (max-width: 991.98px) {
+@media (min-width: 575.98px) {
+    .popup-window {
+        width: 70% !important;
+    }
+    .searchbar input {
+        width: 75% !important;
+    }
+
+    .searchbar button {
+        width: 55px !important;
+    }
+}
+@media (min-width: 767.98px) {
+    .popup-window {
+        width: 50% !important;
+    }
+}
+@media (min-width: 940.98px) {
+    .searchbar input {
+        width: 80% !important;
+    }
+    .searchbar button {
+        width: 55px !important;
+    }
+}
+/* @media (min-width: 1px) and (max-width: 1200px) { */
+@media (min-width: 1px) and (max-width: 1200px) {
 
     /* Popup ablakok */
     .popup-window {
@@ -583,7 +608,7 @@ option {
     }
 
     .searchbar input {
-        width: 70% !important;
+        width: 70%;
         padding: 1vh 5vw !important;
     }
 
@@ -666,4 +691,35 @@ option {
 
 }
 
-/* @media (max-width: 1199.98px) {} */
+@media (min-width: 1199.98px) {
+    .popup-window {
+        width: 30% !important;
+    }
+    .dashboard .logo:nth-child(1) {
+        visibility: unset !important;
+        position: unset !important;
+    }
+    .dashboard .logo:nth-child(2), .dashboard .logo-message {
+        visibility: hidden;
+        display: none;
+        position: absolute;
+    }
+    .searchbar input {
+        width: 85% !important;
+    }
+    .searchbar button {
+        width: 55px !important;
+    }
+
+}
+@media (min-width: 1630px) {
+    .popup-window {
+        width: 20% !important;
+    }
+    .searchbar input {
+        width: 87% !important;
+    }
+    .searchbar button {
+        width: 55px !important;
+    }
+}
