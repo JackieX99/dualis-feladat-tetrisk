@@ -204,6 +204,7 @@ body {
 }
 
 .searchbar button {
+    cursor: pointer;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 12px;
@@ -218,7 +219,7 @@ body {
 
 .menu {
     display: flex;
-    padding: 10px;
+    /* padding: 10px 0; */
 }
 
 .menu a {
@@ -288,11 +289,12 @@ body {
     padding: 10px;
     border-radius: 10px;
     color: white;
-    width: 95%;
+    width: calc(100%-20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     height: 5vh;
-    margin: 3vh auto;
+    /* margin: 3vh auto; */
+    margin: 3vh 0;
 }
 
 .card h2 {
@@ -339,11 +341,8 @@ body {
 
 /* Partner adatainak listázása oldal */
 
-.partner-name {
-    padding: 0 10px;
-}
-
 .partner-name h3 {
+    margin: 1.5vh 0;
     color: white;
     font-size: 18pt;
 }
@@ -502,7 +501,7 @@ option {
     border: none;
     outline: none;
     background-color: rgba(217, 217, 217, 0.1);
-    margin: 1vh 0;
+    margin: 1.5vh 0;
     width: 100%;
     padding: 10px 12px;
     width: 40%;
@@ -612,10 +611,16 @@ option {
         width: 50% !important;
     }
     .partner-data{
-        flex-direction: row;
+        flex-direction: column !important;
     }
     .partner-id, .partner-birthday, .partner-ids, .partner-address, .partner-status{
-        order: unset;
+        order: unset !important;
+        /* display: unset !important; */
+        visibility: unset !important;
+    }
+    .title-container {
+        display: none !important;
+        visibility: hidden !important;
     }
 }
 @media (min-width: 940.98px) {
@@ -756,6 +761,10 @@ option {
     }
     .searchbar button {
         width: 55px !important;
+    }
+
+    .partner-data{
+        flex-direction: row !important;
     }
     
 
