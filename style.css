@@ -344,7 +344,8 @@ body {
 .partner-name h3 {
     margin: 1.5vh 0;
     color: white;
-    font-size: 18pt;
+    /* font-size: 18pt; */
+    font-size: 36px;
 }
 
 .partner-description {
