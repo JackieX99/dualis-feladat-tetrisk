@@ -128,7 +128,7 @@ body {
     color: white;
     border-radius: 10px;
     position: absolute;
-    bottom: 4vh;
+    bottom: 3vh;
     left: 0;
     right: 0;
     margin-inline: auto;
@@ -299,25 +299,25 @@ body {
 
 .card h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .card p {
     margin: 5px 0;
 }
 
-.card .column {
+.card-column {
     height: 5vh;
-    margin: 0 1vw;
+    /* margin: 0 1vw; */
     position: relative;
     width: 15%;
 }
 
-.card .column p {
+.card-column p {
     margin: 0;
 }
 
-.card .column p:nth-child(2) {
+.card-column p:nth-child(2) {
     position: absolute;
     bottom: 0;
 }
@@ -388,7 +388,8 @@ body {
 .partner-data .partner-id {
     background-color: rgba(217, 217, 217, 0.1);
     border-radius: 10px;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
+    padding: 5px 15px;
     color: white;
     margin: 1vh 0;
     display: flex;
@@ -677,7 +678,8 @@ option {
 
     /* menü ikon */
     .dashboard .logo:nth-child(2) {
-        margin: 0 auto 0 2vw !important;
+        /* margin: 0 auto 0 2vw !important; */
+        margin: 0 auto 0 0 !important;
         width: 30px;
         padding-top: 3vh !important;
         display: unset;
@@ -686,7 +688,8 @@ option {
 
     /* message ikon */
     .dashboard .logo-message {
-        margin: 0 2vw 0 auto !important;
+        /* margin: 0 2vw 0 auto !important; */
+        margin: 0 0 0 auto !important;
         width: 30px;
         padding-top: 3vh !important;
         display: unset;
