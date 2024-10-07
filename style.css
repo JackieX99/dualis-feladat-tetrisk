@@ -64,7 +64,7 @@ body {
     margin: 0;
     padding: 0;
     margin: auto;
-    font-size: 1.6rem;
+    font-size: 24px;
 }
 
 .popup-window .body {
@@ -91,19 +91,20 @@ body {
     outline: none;
     margin-left: 1vw;
     height: 3vh;
-    font-size: 14pt;
+    font-size: 16px;
     color: white;
 }
 
 .popup-window input::placeholder {
     color: white;
-    font-size: 14pt;
+    font-size: 16px;
 }
 
 .forgotten-pw {
     width: 80%;
     margin: 0 auto;
     cursor: pointer;
+    font-size: 13px;
 }
 
 .forgotten-pw p {
@@ -115,7 +116,7 @@ body {
     color: rgba(216, 43, 43, 1);
     margin: 0;
     text-align: center;
-    font-size: 12pt;
+    font-size: 16px;
 }
 
 .popup-window-btn {
@@ -124,7 +125,7 @@ body {
     outline: none;
     padding: 1.5vh 1.5vw;
     display: block;
-    font-size: 14pt;
+    font-size: 16px;
     color: white;
     border-radius: 10px;
     position: absolute;
@@ -147,13 +148,13 @@ body {
     width: 70%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.15rem;
+    font-size: 16px;
 }
 
 .instructions p {
     color: rgba(255, 254, 254, 0.7);
     margin: 0;
-    padding-top: 4vh;
+    padding: 4vh 0 3vh 0;
 }
 
 /* Login utáni dashboard felület */
@@ -195,12 +196,13 @@ body {
     color: white;
     padding: 1vh 1.5vw;
     border-radius: 12px;
-    font-size: 12pt;
+    font-size: 16px;
     /* width: 88%; */
 }
 
 .searchbar input::placeholder {
     color: white;
+    font-size: 16px;
 }
 
 .searchbar button {
@@ -299,7 +301,7 @@ body {
 
 .card h2 {
     margin: 0;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .card p {
@@ -315,6 +317,7 @@ body {
 
 .card-column p {
     margin: 0;
+    font-size: 16px;
 }
 
 .card-column p:nth-child(2) {
@@ -326,13 +329,20 @@ body {
 .card .icon {
     display: flex;
     align-items: center;
-    margin: 0 5vw;
+    margin: 0 8vw;
+    height: max-content;
     cursor: pointer;
 }
 
 .card .icon img {
     margin-right: 10px;
     transition: scale .2s ease-in-out;
+    width: 18px;
+    height: 18px;
+}
+
+.card .icon p{
+    font-size: 16px;
 }
 
 .card .icon:hover img {
@@ -344,7 +354,6 @@ body {
 .partner-name h3 {
     margin: 1.5vh 0;
     color: white;
-    /* font-size: 18pt; */
     font-size: 36px;
 }
 
@@ -356,6 +365,7 @@ body {
     color: white;
     margin-bottom: 5vh;
     /* overflow-y: auto; */
+    font-size: 16px;
 }
 
 .partner-informations .searchbar {
@@ -403,10 +413,12 @@ body {
 
 .partner-id p:nth-child(2) {
     margin-left: auto;
+    font-size: 16px;
 }
 
 .title {
     color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
 }
 
 .partner-birthday, .partner-ids, .partner-status, .partner-address {
@@ -471,12 +483,11 @@ body {
     width: 100%;
     padding: 3px;
     color: rgba(255, 254, 254, .5);
-
+    font-size: 13px;
+    box-sizing: border-box;
 }
 
 select {
-    /* background-position-x: 100%;
-    background-position-y: 5px; */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -507,14 +518,14 @@ option {
     width: 100%;
     padding: 10px 12px;
     width: 40%;
-    font-size: 14pt;
+    font-size: 16px;
     color: rgba(255, 254, 254, .5);
     border-radius: 10px;
 }
 
 .set-partner-name::placeholder {
     color: rgba(255, 254, 254, .5);
-    font-size: 14pt;
+    font-size: 16px;
 }
 
 .editable .partner-name {
@@ -530,7 +541,7 @@ option {
     outline: none;
     width: 50%;
     margin: 0 auto;
-    font-size: 14pt;
+    font-size: 16px;
     margin-top: 5vh;
     cursor: pointer;
     display: none;
@@ -641,9 +652,31 @@ option {
         width: 80%;
     }
 
+    .popup-window .login{
+        height: 40vh;
+    }
+
+    .card-column{
+        width: 30%;
+    }
+
+    .card-column:nth-child(2){
+        position: absolute;
+        display: none;
+    }
+
     .popup-window-btn {
         width: 70%;
         text-transform: uppercase;
+        font-size: 24px;
+    }
+
+    .popup-window input{
+        font-size: 16px;
+    }
+
+    .login .email{
+        margin-bottom: 3vh !important;
     }
 
     /* Dashboard */
@@ -770,6 +803,10 @@ option {
     .partner-data{
         flex-direction: row !important;
     }
+
+    .card-column{
+        width: 40%;
+    }
     
 
 }
@@ -782,5 +819,9 @@ option {
     }
     .searchbar button {
         width: 55px !important;
+    }
+
+    .card-column{
+        width: 15%;
     }
 }
